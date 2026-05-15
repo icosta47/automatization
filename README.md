@@ -1,4 +1,4 @@
 # automatization
 
 Status of last Deployment:<br>
-<img src="https://github.com/icosta47/automatization/workflows/badge.svg?branch=master"><br>
+<img src="https://github.com/icosta47/automatization/workflows/main.yml/badge.svg?branch=master"><br>
