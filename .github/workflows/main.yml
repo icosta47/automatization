@@ -34,9 +34,11 @@ jobs:
 
   run-script:
     runs-on: ubuntu-latest
+
+    env:
+      JOB_name: "RUN SCRIPT"
     
     steps:
-
       - name: Clone repository
         uses: actions/checkout@v4
 
@@ -44,6 +46,10 @@ jobs:
         run: |
           echo "App name: ${{env.APP_NAME}}
           echo "App name: ${{env.APP_PACKAGE}}
+          echo "Job name: ${{env.JOB_name}}
+          echo "Step name: $STEP_NAME
+        env:
+          STEP_NAME: "STEP NAMING"
               
       - name: Install Python 3.14
         uses: actions/setup-python@v4
